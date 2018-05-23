@@ -6,13 +6,18 @@
 
 <h:head></h:head> 
 <body> 
-	<h:outputText value="Hello Jsf" /> 
+	<h:outputText value="Hello Jsf" /> <br/>
 	<h:form>
 	
 		<h:outputText value="Nome" />
-		<h:inputText value="" />
-		<h:commandButton value="Ver" />
+		<h:inputText value="#{helloJsf.nomePessoa}" />
+		<h:commandButton action="#{helloJsf.mostrarConsole()}" value="Ver" />
 		
 	</h:form>
+	<br/>
+	<h:outputText value="Nome do peao: #{helloJsf.nomePessoa}"/>
+	<br/>
+	<a href="Calculadora.jsf">Calculadorinha</a>
+	
 </body> 
 </html>
